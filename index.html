@@ -7,9 +7,51 @@
 		<link href="assets/css/style.css" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
+	
+	<!-- styles for animation of welcome message -->
+	<style>
+		.animation {
+		    width: 100px;
+		    height: 30px;
+		    border: 1px solid #999;
+		    position: absolute;
+		    left:0px;
+		    -webkit-animation-name: example;  /* Safari 4.0 - 8.0 */
+		    -webkit-animation-duration: 3s;  /* Safari 4.0 - 8.0 */    
+		    -webkit-animation-delay: 1s; /* Safari 4.0 - 8.0 */
+		    -webkit-animation-fill-mode: both; /* Safari 4.0 - 8.0 */
+		    animation-name: example;
+		    animation-duration: 3s;    
+		    animation-delay: 1s;
+		    animation-fill-mode: both;
+		}
+
+		.animation p {
+			text-align: center;
+			font-weight: bold;
+		}
+
+		/* Safari 4.0 - 8.0 */
+		@-webkit-keyframes example {
+		    from {top: 200px; background-color: #ccc;}
+		    to {top: 300px; background-color: yellow;}
+		}
+
+		@keyframes example {
+		    from {top: 200px; background-color: #ccc;}
+		    to {top: 300px; background-color: yellow;}
+		}
+	</style>
 
 	<body>
+		
+		<!-- animated welcome message -->
+	  	<div class="animation">
+	  		<p>Welcome!</p>
+	  	</div>
+
 	  <div id="container">
+
 		<header>
 			<h1>Anne Simon</h1>		
 		</header>
