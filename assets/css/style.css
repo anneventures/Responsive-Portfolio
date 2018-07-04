@@ -51,11 +51,15 @@ a:visited {
 	text-align: center;
 }
 
+#portfolio {
+	width:100%;
+}
+
 
 .workItem {
 	position:relative;
 	float:left;
-	width: 274px;
+	width: 250px;
 	margin: 0px 25px;
 }
 
